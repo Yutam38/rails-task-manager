@@ -1,0 +1,16 @@
+<div class="title">
+  <h1>My tasks</h1>
+</div>
+
+<ul class="tasks list-unstyled">
+  <% @tasks.each do |task| %>
+    <li class="task-box">
+      <input type="checkbox" class="me-2" class="task-checkbox">
+      <%= link_to task.title, task_path(task), class: "task-title" %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to tasks_new_path(), class: "nav-link rounded-5 btn btn-primary btn-xs text-white floating-button", role: "button" do %>
+  &oplus;
+<% end %>

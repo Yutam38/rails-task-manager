@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+
+ .title {
+  font-family: initial;
+  text-align: center;
+ }
+
+ .btn-xs {
+  padding: 0.5rem 0.75rem !important;
+  font-size: 1rem !important;
+  border-radius: 0.2rem !important;
+  display: inline-block !important;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 100px;  /* From bottom */
+  right: 100px;   /* From right */
+  z-index: 1000; /* put over other elements */
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.task-box {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px auto; /* center */
+  border: 2px solid #ddd; /* border line */
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-content: flex-start; /* ✅ 子要素を左寄せにする */
+}
+
+.task-checkbox {
+  margin-right: 10px; /* ✅ チェックボックスとタイトルの間に余白を追加 */
+}
+
+.task-title {
+  text-decoration: none; /* delete under line */
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.task-title:hover {
+  color: #007bff; /* ✅ ホバー時の色（好みに応じて変更） */
+}
